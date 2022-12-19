@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>№5</title>
+    <h1>Mасив</h1>
+    <script defer src="./index.js"></script>
+    <script language="JavaScript">     
+        const i = prompt('masiv');
+        const b = prompt('masiv');
+        const c = prompt('masiv');
+        const f = prompt('masiv');
+        const arr = [i,b,c,f];
+        document.write(arr + '<br>' + '<h1>За зростанням:<h1>');
+        arr.sort(function(a,b){
+            return a - b
+        });
+        document.write(arr + '<br>' + '<h1>Видалити елементи:<h1>');
+        arr.splice(1,3);
+        document.write(arr)
+    </script>
+</head>
+<body>
+</body>
+</html>
